@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        // function changeCss() 
+        // {
+        //     let h1obj=document.getElementById("myid");
+        //     h1obj.style.backgroundColor="blueviolet";
+        // }
+        // function changeCss2(e) {
+        //     e.style.backgroundColor="green";
+        //     // console.log(e.target);
+        // }
+
+    </script>
+</head>
+
+<body>
+
+    <h1 id="myid" ondb>Lorem ipsum dolor sit amet.</h1>
+    <!-- <h1 onclick="changeCss()" id="myid">Lorem ipsum dolor sit amet.</h1>
+    <h2 onclick="changeCss2(this)">Lorem ipsum dolor sit amet.</h1>
+
+        <input type="text" oninput="changeCss2(this)"> -->
+    <script>
+        let h1obj = document.getElementById("myid");
+        // h1obj.addEventListener('click', greet);//callback
+        h1obj.onclick=greet;
+        // h1obj.addEventListener('dblclick',()=>{
+        //     alert(" hello there !");
+        // });
+        // setTimeout(greet, 3000);
+
+        // let intr=setInterval(greet, 2000);
+        // clearInterval(intr);
+
+        function greet() {
+            alert("hello");
+        }
+
+    </script>
+</body>
+
+</html>
