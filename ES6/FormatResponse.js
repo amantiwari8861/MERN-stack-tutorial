@@ -1,4 +1,5 @@
-let obj3={
+let obj3=
+{
     "state": "Delhi",
     "cities": [
         {
@@ -68,7 +69,6 @@ let obj3={
 //     for (const city in cities) 
 //     {
 //         console.log(key+" : "+city["cityName"]);
-
 //     }
 // }
 

@@ -34,11 +34,13 @@ let nestedObj =
 }
 
 // console.log(nestedObj);
+// console.table(nestedObj);
+// console.table(nestedObj["data"][0]["cities"][0]["warehouses"][0]["warehouse_name"]);
 
 // for (const key in nestedObj) 
 // {
 //     let k=nestedObj[key];
-//     // console.log(k);
+//     console.log(k);
 
 //     if (typeof(k) === 'object') 
 //     {
