@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>            
+        let res=document.getElementById("result");
+//         let clock=setInterval(()=>{
+//             let d=new Date();
+//             res.innerHTML=d
+//         },0001);
+//         clock();
+
+//         function stopclock() {
+//             clearInterval(clock);
+//         }
+        let d1=new Date(1999,3,22);
+        // document.writeln("Aman's birthday is on "+d1);
+        document.writeln("Aman's birthday is on "+d1.getDate()+"/"+(d1.getMonth()+1)+"/"+d1.getFullYear());
+        document.writeln("<br>"+d1.toDateString());
+
+//     </script>
+<!-- <input type="button" onclick="stopclock();" value="stop"> -->
+</body>
+</html>
