@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        input:invalid
+        {
+            border-left: 5px solid red;
+            color: red;
+            outline-color: red;
+        }
+        input:valid
+        {
+            border-left: 5px solid green;
+            color: green;
+            outline-color: greenyellow;
+
+        }
+    </style> -->
+    <script>
+
+        function validateInp(e)
+        {
+            // console.log(e.value);
+            // document.getElementById("result").innerHTML=e.value;
+            let str=e.value;
+            let res=document.getElementById("result");
+
+            // if(str.match(/[A-Z]{3,8}/g))
+            if(/[A-Z]{3,8}/g.test(str) === true)
+            {
+                res.style.color="green";
+                res.innerHTML="Everything is Fine!";
+                e.style.outlineColor="greenyellow";
+                e.style.color="green";
+                e.style.borderLeft="5px solid green";
+
+            }
+            else
+            {
+                res.style.color="red";
+                res.innerHTML="Everything is not Fine!";
+                e.style.outlineColor="red";
+                e.style.color="red";
+                e.style.borderLeft="5px solid red";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        
+        UserName : <input type="text" oninput="validateInp(this)" required>
+        <h1 id="result"></h1>
+        
+        <!-- UserName : <input type="text" pattern="[A-Za-z0-9 .$#^]{4,}" title="sirf capital letter daal Chutiye!" required> -->
+        <!-- <button type="submit">Submit now</button> -->
+
+
+
+    </form>
+</body>
+</html>

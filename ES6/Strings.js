@@ -67,21 +67,21 @@
 // //Returns Are they enjoying JavaScript? 
 
 
-let myString1 = "can you find it?"; 
-console.log("Occurrence of find in statement1: "+myString1.search('find')); 
-let myString2 = "Or you can not?"; 
-console.log("Occurrence of find in statement2: "+myString2.search('find'));
+// let myString1 = "can you find it?"; 
+// console.log("Occurrence of find in statement1: "+myString1.search('find')); 
+// let myString2 = "Or you can not?"; 
+// console.log("Occurrence of find in statement2: "+myString2.search('find'));
 /*Returns: 
  The Occurrence of find in statement1: 8, 
  The Occurrence of find in statement2: -1*/ 
 
- let myString = "Hello World"; 
-console.log("Split string based on spaces: "+myString.split(" ")); 
+//  let myString = "Hello World"; 
+// console.log("Split string based on spaces: "+myString.split(" ")); 
 //Returns: Split of string based on spaces: Hello,World 
 
-let myString = "Hello World"; 
-console.log("Substring using 2 parameters: "+myString.substring(2,5)); 
-console.log("Substring using 1 parameter: "+myString.substring(5)); 
+// let myString = "Hello World"; 
+// console.log("Substring using 2 parameters: "+myString.substring(2,5)); 
+// console.log("Substring using 1 parameter: "+myString.substring(5)); 
 /*Returns: 
 Substring using 2 parameters: llo 
 Substring using 1 parameter: World*/ 
