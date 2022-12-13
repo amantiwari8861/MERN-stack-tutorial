@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col{
+            color: greenyellow;
+        }
+        .back{
+            background-color: black;
+        }
+        .brdr
+        {
+            border: 3px solid violet;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- <h1>Welcome to our website !!</h1> -->
+<h1 class="col back">Welcome to our website !!</h1>
+
+
+</body>
+<script>
+    let h1obj=document.querySelector("h1");
+    h1obj.onclick=styleXyz;  //callback
+
+    function styleXyz() {
+        // h1obj.style.color="Greenyellow";
+        // h1obj.style.backgroundColor="black";
+        // h1obj.style.border="3px solid violet";
+        // h1obj.style.textAlign="center";
+        // h1obj.classList.add("col","back");
+        // h1obj.classList.remove("col");
+        // h1obj.classList.toggle("col");
+        // h1obj.classList.toggle("back");
+
+        // h1obj.className="brdr";// replacing existing classes
+        if ( !(h1obj.classList.contains("brdr"))) {
+            h1obj.className +=" brdr";// adding brdr class to existing classes
+        }
+
+    }
+
+</script>
+</html>

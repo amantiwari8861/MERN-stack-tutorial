@@ -8,7 +8,7 @@ import { loginAction } from '../actions/action';
 
 function Login(props) {
     const [isValid, setIsValid] = useState();
-    const [login, setLogin] = useState({username:"Aman",password:"1234"})
+    const [login, setLogin] = useState({})
     
     const onFnf = () => {
         alert("This functionality is yet to be implemented.")
