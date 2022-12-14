@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            font-size: 4rem;
+        }
+        .main>input{
+            height: 10vh;
+            width: 20%;
+            margin: 0px 50px;
+            font-size: 2rem;
+            padding-left: 10px;
+        }
+        button{
+            height: 10vh;
+            width: 20%;
+            font-size: 2rem;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>
+        <p><span>Hello</span></p>
+    </h1> -->
+    <div class="main">
+    Enter Note :<input type="text" id="note" >
+    <br><button onclick="createNote()">Add Note</button>
+    </div>
+</body>
+<script>
+    // console.log(document.body);
+    // let obj=document.querySelector("h1");
+    // console.log(obj);
+    // document.write(obj);
+    // alert(obj);
+    function createNote() 
+    {
+        let obj=document.querySelector(".main>input");
+        // console.log(obj.value);
+
+        let h3obj=document.createElement("h3");
+        let textnd=document.createTextNode(obj.value);
+        h3obj.append(textnd);
+        h3obj.style.textAlign="center";
+        let brobj=document.createElement("br");
+        document.body.appendChild(brobj);
+        document.body.appendChild(h3obj);
+
+    }
+</script>
+</html>
