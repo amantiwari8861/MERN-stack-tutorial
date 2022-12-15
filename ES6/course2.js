@@ -4,4 +4,7 @@ console.log(crs.getCourseName());
 crs.setCourseName("ES6");
 console.log(crs.getCourseName());
 
-// node --experimental-modules filename.mjs
+// make a package.json file in same folder and write 
+// {
+//     "type":"module"
+// }
