@@ -1,6 +1,6 @@
 class Calculator {
+	num=10;
 	constructor(num1, num2){  // Constructor used for initializing the class instance
-	
 		/* Properties initialized in the constructor */
 		this.num1 = num1;
 		this.num2 = num2;
@@ -18,5 +18,6 @@ class Calculator {
 let v="Aman "+1000;
 console.log(v);
 let calculator = new Calculator(300, 100); // Creating Calculator class object or instance
+console.log(typeof calculator);
 console.log("Add method returns " + calculator.add()); // Add method returns 400. 
 console.log("Subtract method returns " + calculator.subtract()); // Subtract method returns 200. 
