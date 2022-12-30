@@ -1,8 +1,16 @@
 /*global styling*/
-body{
+/* body{
   background-color: greenyellow;
-}
+} */
 
-h1{
+/* h1{
   background-color: purple;
+} */
+
+
+.myStyle1{
+
+  border: 1px solid rgb(0, 255, 17);
+  background-color: rgb(120, 47, 255);
+  color: rgb(249, 6, 6);
 }

@@ -1,10 +1,33 @@
-/* h1{
-    background-color: aqua; /*view encapsulation
-} */
+.myStyle1
+{
+    background-color: aqua; /*view encapsulation*/
+}
 
-.col{
+
+
+
+
+
+
+
+
+
+
+/* .col{
     color:rgb(225, 244, 58);
 }
 #myid{
     border: 2px solid red;
+} */
+footer{
+    background-color: black;
+}
+
+ul a li{
+    list-style-type: none;
+    margin: 3px;
+}
+ul a{
+    text-decoration: none;
+    color: rgb(75, 73, 73);
 }

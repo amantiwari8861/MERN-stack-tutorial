@@ -1,13 +1,24 @@
 import './App.css';
-import  React  from "react";
-import Navbar from './Navbar';
+import React  from "react";
+// import Navbar from './subcomponents/Navbar.jsx';
+// import Main from './subcomponents/Main';
+// import Footer from './subcomponents/Footer';
+import TestView1 from '../viewEncapsulation/TestView1';
 
 function App() { //functional component
   return(
     // <h1>i am in app.js file</h1>/* this is jsx */
     //babel converts our jsx into this kind of code
     // React.createElement("h1", {className:"col rounded",id:"myid"}, "i am in App.js file")
-  <Navbar/>
+  // <React.Fragment>
+  <>
+  {/* <Navbar/>
+  <Main/>
+  <Footer/> */}
+  <TestView1/>
+  <h1 className='myStyle1'>Hii i am in App.js</h1>
+  </>
+  // </React.Fragment>
   );
 }
 
