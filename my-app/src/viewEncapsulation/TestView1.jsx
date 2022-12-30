@@ -1,9 +1,9 @@
 import React from 'react'
-import cla from "./";
+import st from "./Test1.module.css";
 const TestView1 = () => {
   return (
     <div>
-      <h1 className={cla.mystyle1}>Welcome to my website!</h1>
+      <h1 className={st.myStyle1}>Welcome to my website!</h1>
     </div>
   )
 }
