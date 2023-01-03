@@ -5,6 +5,8 @@ import React  from "react";
 // import Footer from './subcomponents/Footer';
 // import TestView1 from '../viewEncapsulation/TestView1';
 import Client1 from "./testStateAndPros/Client1";
+import TestClassComp from './testStateAndPros/TestClassComp';
+import TestState from './testStateAndPros/TestState';
 
 function App() { //functional component
   return(
@@ -18,7 +20,9 @@ function App() { //functional component
   <Footer/> */}
   {/* <TestView1/> */}
   {/* <h1 className='myStyle1'>Hii i am in App.js</h1> */}
-  <Client1/>
+  {/* <Client1/> */}
+  {/* <TestClassComp/> */}
+  <TestState/>
   </>
   // </React.Fragment>
   );

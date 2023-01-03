@@ -9,10 +9,10 @@ const Client1 = () => {
     <H1comp fruit={fruits[1]}/>
     <H1comp fruit={fruits[2]}/> }*/
 }
-console.log(fruits);//normal array
-fruits.map((f,i)=>{return <H1comp key={i} fruit={f}/>})//this line will not change original array
-console.log(fruits);//normal array
-console.log(fruits.map((f,i)=>{return <H1comp key={i} fruit={f}/>}));
+// console.log(fruits);//normal array
+// fruits.map((f,i)=>{return <H1comp key={i} fruit={f}/>})//this line will not change original array
+// console.log(fruits);//normal array
+// console.log(fruits.map((f,i)=>{return <H1comp key={i} fruit={f}/>}));
 
 export default Client1
 
