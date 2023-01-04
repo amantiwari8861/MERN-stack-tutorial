@@ -7,6 +7,7 @@ import React  from "react";
 import Client1 from "./testStateAndPros/Client1";
 import TestClassComp from './testStateAndPros/TestClassComp';
 import TestState from './testStateAndPros/TestState';
+import ParentPros from './testStateAndPros/ParentPros';
 
 function App() { //functional component
   return(
@@ -22,7 +23,8 @@ function App() { //functional component
   {/* <h1 className='myStyle1'>Hii i am in App.js</h1> */}
   {/* <Client1/> */}
   {/* <TestClassComp/> */}
-  <TestState/>
+  {/* <TestState/> */}
+  <ParentPros/>
   </>
   // </React.Fragment>
   );
