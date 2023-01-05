@@ -8,6 +8,7 @@ import Client1 from "./testStateAndPros/Client1";
 import TestClassComp from './testStateAndPros/TestClassComp';
 import TestState from './testStateAndPros/TestState';
 import ParentPros from './testStateAndPros/ParentPros';
+import Employees from './testStateAndPros/ParentComp';
 
 function App() { //functional component
   return(
@@ -24,7 +25,8 @@ function App() { //functional component
   {/* <Client1/> */}
   {/* <TestClassComp/> */}
   {/* <TestState/> */}
-  <ParentPros/>
+  {/* <ParentPros/> */}
+  <Employees/>
   </>
   // </React.Fragment>
   );
