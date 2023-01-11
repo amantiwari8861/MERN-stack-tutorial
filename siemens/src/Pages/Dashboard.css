@@ -1,0 +1,98 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 20px;
+}
+
+.body {
+    background-color: #F4F6F9;
+}
+
+.div1 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+
+.div2 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+.div3 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+
+.div4 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+
+.div5 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+
+.div6 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+
+.div7 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+
+.div8 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+.div9 {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
