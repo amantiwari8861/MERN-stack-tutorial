@@ -9,7 +9,8 @@ const App2 = () => {
     <div>
         <Routes>
             <Route path='/' element={<LoginForm/>} />
-            <Route path='/home2/:name' element={<Home2/>} >
+
+            <Route path='/home2/:uname' element={<Home2/>} >
                 <Route path="display/:topic" element={<Display/>}/>
             </Route>
             {/* <Route path="/display/:topic" element={<Display/>}/> */}

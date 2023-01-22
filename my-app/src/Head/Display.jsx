@@ -1,9 +1,14 @@
-import React from 'react';
-class Display extends React.Component {
-    render() {
-        return <React.Fragment>
-            <h2>Inside {this.props.match.params.topic} component</h2>
-        </React.Fragment>
-    }
-};
-export default Display;
+import React from 'react'
+import { useParams } from 'react-router-dom'
+
+const Display = () => {
+
+    const param=useParams();
+
+  return (
+    <h1>Inside {param.topic} Details</h1>
+  )
+}
+
+export default Display
+

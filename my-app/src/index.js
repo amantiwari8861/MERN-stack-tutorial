@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Employees from './forms/EmployeesComp';
-import Header from './Head/Header';
-import Login from './forms/Login';
+// import Employees from './forms/EmployeesComp';
 // import Employees from './hooks/Employee';
 // import { ErrorHandler, Life1 } from './classCompLifeCycle/Life1';
 // import UseEffectWithoutDependency from './hooks/useEffectWithoutDependency';
@@ -15,13 +13,8 @@ import "bootstrap/dist/js/bootstrap.bundle"
 // import ChildNodeComp from './components/testStateAndPros/ChildNodeExample';
 // import Life1 from './classCompLifeCycle/Life1';
 // import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Head/Home';
-import AboutUs from './Head/AboutUs';
-import ContactUs from './Head/ContactUs';
-import Header2 from './Header2';
-import NotFound from './Head/NotFound';
-import LoginForm from './Head/LoginForm';
+import { BrowserRouter as Router, Outlet} from 'react-router-dom';
+import ParentComponent from './ParentComponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -67,10 +60,8 @@ root.render(
     </Router> */}
     {/* <Header2/> */}
     <Router>
-      <Routes>
-      <Route path="/" element={<LoginForm/>} />
-      <Route path="/home/:name" element={<Home/>} />
-      </Routes>
+      <ParentComponent/>
+      <Outlet/>
     </Router>
   </>
 );

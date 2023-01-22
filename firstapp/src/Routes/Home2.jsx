@@ -11,18 +11,18 @@ class Home2 extends Component {
     render() {
         return (
         <React.Fragment>
-            <h4>Welcome&nbsp;{this.props.params.name} to UI courses</h4>
+            <h4>Welcome&nbsp;{this.props.params.uname} to UI courses</h4>
             <h4> Just Launched...</h4>
             <Link to="./display/Angular">             
                 <li>Angular</li> 
             </Link> 
-            <Link to="/display/React">                      
+            <Link to="./display/React">                      
                 <li>React</li>
             </Link> 
-            <Link to="/display/Express">                    
+            <Link to="./display/Express">                    
                 <li>Express</li> 
             </Link> 
-            <Link to="/display/Vue">  
+            <Link to="./display/Vue">  
                 <li>Vue</li> 
             </Link> 
             <br />

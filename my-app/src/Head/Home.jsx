@@ -10,31 +10,28 @@
 
 // export default Home
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, useParams } from 'react-router-dom';
-import Display from './Display';
+import { Link, useParams } from 'react-router-dom';
 const Home=()=>{
 
-  const {name}=useParams();
-    return <Router>
+  const params=useParams();
+    return (
       <React.Fragment>
-        <h4>Welcome {name}&nbsp;   {this.props.match.params.name} to UI courses</h4>
+        <h4>Welcome &nbsp;{params.name} to UI courses</h4>
         <br /><br />
         <h4> Just Launched...</h4>
-        <Link to="/display/Angular">
+        <Link to="./display/Angular">
           <li>Angular</li>
         </Link>
-        <Link to="/display/React">
+        <Link to="./display/React">
           <li>React</li>
         </Link>
-        <Link to="/display/Express">
+        <Link to="./display/Express">
           <li>Express</li>
         </Link>
-        <Link to="/display/Vue">
+        <Link to="./display/Vue">
           <li>Vue</li>
         </Link>
-        <Route path="/display/:topic"
-          component={Display} />
       </React.Fragment>
-    </Router>
+    )
   }
 export default Home;
