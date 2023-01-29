@@ -8,7 +8,6 @@
 // });
 
 // npm init -y
-// npm install --save  express cors 
-// mongoose dotenv
+// npm install --save  express cors mongoose dotenv
 // npm install -g nodemon
 // nodemon server.js

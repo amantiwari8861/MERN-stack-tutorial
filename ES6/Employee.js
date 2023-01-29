@@ -1,6 +1,6 @@
 class Employee
 {
-    //  id
+   //   id
      id;name=45;
      salary=56.8;
     //  a;
@@ -13,13 +13,11 @@ class Employee
         console.log("hello "+this.salary);//concatinating the string
      }
 }
-
-
-let obj=new Employee();
-console.log(obj.id);
-console.log(obj.name);
-console.log(obj.salary);
-console.log(obj.a);
+// let obj=new Employee();
+// console.log(obj.id);
+// console.log(obj.name);
+// console.log(obj.salary);
+// console.log(obj.a);
 console.log("---------------------------");
 let obj2=new Employee(23);
 console.log(obj2.id);
