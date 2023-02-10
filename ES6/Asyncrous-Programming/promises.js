@@ -26,7 +26,8 @@ let order=(time,work)=>{
             setTimeout(() => {
                 resolver(work());
             }, time);
-        } else {
+        } 
+        else {
             rejection(console.log("sorry sir! shop is closed"));
         }
     });

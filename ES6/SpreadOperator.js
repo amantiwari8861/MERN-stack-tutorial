@@ -1,16 +1,16 @@
-let candidateSelected={
-	Name:'Rexha Bebe',
-	Qualification:'Graduation',
+let candidateSelected = {
+	Name: 'Rexha Bebe',
+	Qualification: 'Graduation',
 };
-let SelectedAs={
-	jobTitle:'System Engineer',
-	location:'Bangalore'
+let SelectedAs = {
+	jobTitle: 'System Engineer',
+	location: 'Bangalore'
 };
-let employeeInfo={
+let employeeInfo = {
 	...candidateSelected,
 	...SelectedAs
 };
-console.log(employeeInfo); 
+console.log(employeeInfo);
 /*
 {
   Name: 'Rexha Bebe',

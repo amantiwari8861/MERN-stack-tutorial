@@ -1,10 +1,8 @@
 import express from "express";
 import cors from "cors";
-import mongoose from "mongoose";
 import dotenv from "dotenv";
 // const express = require('express');
 // const cors = require('cors');
-// const mongoose = require('mongoose');
 // require('dotenv').config();
 dotenv.config();
 
@@ -16,12 +14,6 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 // mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
-mongoose.connect(uri, { useNewUrlParser: true}
-);
-const connection = mongoose.connection;
-connection.once('open', () => {
-  console.log("MongoDB database connection established successfully");
-})
 
 // const exercisesRouter = require('./routes/exercises');
 // const usersRouter = require('./routes/users');
@@ -31,3 +23,8 @@ connection.once('open', () => {
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
+
+app.get("/*",(req,res)=>{
+  // res.sendStatus(404);
+  res.status(404).send("something !!");
+})

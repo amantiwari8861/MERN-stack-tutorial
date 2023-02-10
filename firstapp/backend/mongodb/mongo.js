@@ -11,3 +11,13 @@
 // npm install --save  express cors mongoose dotenv
 // npm install -g nodemon
 // nodemon server.js
+
+//mongoose
+import mongoose from "mongoose";
+// const mongoose = require('mongoose');
+
+mongoose.connect(uri, { useNewUrlParser: true});
+const connection = mongoose.connection;
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully");
+})

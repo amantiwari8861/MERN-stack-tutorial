@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let url = "http://locaost:3000/employees";
+        let url = "http://localhost:3000/employees";//i used json-server(fake-api)
+        async function getData() 
+        {
+            let response;
+            try 
+            {
+                response = await fetch(url, {
+                    method: "get",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            } 
+            catch (error) 
+            {
+                console.log('Ek Error aa gaya :\n', error);
+            }
+            // console.log(await response);
+            // Uses the 'optional chaining' operator
+            if (response?.ok) 
+            {
+                console.log('Use the response here!');
+                // console.log(response.json());
+                // console.log(response.text());
+                let data = await response.json();//using await will get the data only not a promise
+                console.log(data);
+                document.body.innerHTML = JSON.stringify(data);
+            } 
+            else 
+            {
+                console.log(`HTTP Response Code: ${response?.status}`)
+            }
+        }
+        getData();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

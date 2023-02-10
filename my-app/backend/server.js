@@ -16,6 +16,12 @@ expressApp.listen(port,()=>{
 expressApp.get("/",(req,res)=>{
     res.send("welcome to my website!");
 })
+
+expressApp.get("*",(req,res)=>{
+    res.send(404);
+})
+
+
 // expressApp.get("/about",showAbout(req,res)); //gives error
 // expressApp.use("/about",showAbout);
 
