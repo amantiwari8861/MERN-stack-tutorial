@@ -15,6 +15,9 @@ import "bootstrap/dist/js/bootstrap.bundle"
 // import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Outlet} from 'react-router-dom';
 import ParentComponent from './ParentComponent';
+import AddEmployee from './hooks/useState';
+import Employees from './hooks/Employee';
+import UseEffectWithoutDependency from './hooks/useEffectWithoutDependency';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -59,10 +62,12 @@ root.render(
       </Routes>
     </Router> */}
     {/* <Header2/> */}
-    <Router>
+    {/* <Router>
       <ParentComponent/>
       <Outlet/>
-    </Router>
+    </Router> */}
+    {/* <Employees/> */}
+    <UseEffectWithoutDependency/>
   </>
 );
 // setTimeout(() => {
