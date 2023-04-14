@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "name": "Aman 2",
+      "salary": 50000,
+      "address": "noida 62",
+      "id": 1
+    },
+    {
+      "name": "Aman",
+      "salary": 8000,
+      "address": "noida 62",
+      "id": 3
+    },
+    {
+      "id": 5,
+      "name": "Shyam",
+      "salary": 50000,
+      "address": "noida 78"
+    },
+    {
+      "id": 6,
+      "name": "krishna",
+      "salary": 900000,
+      "address": "sector 18 noida"
+    },
+    {
+      "id": 11,
+      "name": "Aman",
+      "salary": 50000,
+      "address": "noida 62"
+    },
+    {
+      "name": "Aman Tiwari",
+      "salary": "50000",
+      "address": "niit 62 noida",
+      "id": 12
+    }
+  ]
+}
