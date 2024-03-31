@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // Define an array with two items:
+const profile = ["Oluwatobi", "Sofela"];
+
+// Define a function with one destructuring array containing two parameters:
+function getUserBio([firstName, lastName]) {
+  return `My name is ${firstName} ${lastName}.`;
+}
+
+// Invoke getUserBio while passing the profile array as an argument:
+getUserBio(profile);
+
+// The invocation above will return: "My name is Oluwatobi Sofela."
+function getUserBio([firstName]) {
+    console.log(
+      "Do something else that does not need the destructuring parameter."
+    );
+    return `My name is ${firstName}.`;
+  }
+  function getUserBio([firstName] = []) {
+    console.log(
+      "Do something else that does not need the destructuring parameter."
+    );
+    return `My name is ${firstName}.`;
+  }
+</body>
+</html>

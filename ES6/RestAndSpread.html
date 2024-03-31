@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myBio(firstName, lastName, ...otherInfo) 
+        {
+            return otherInfo;
+        }
+        let result=myBio("Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male");
+        console.log(result);
+    </script>
+</body>
+
+</html>
+
+Beware! You Cannot Use “use strict” Inside a Function Containing a Rest Parameter
+Keep in mind that you cannot use the “use strict” directive inside any function containing a rest parameter, default parameter, or destructuring parameter. Otherwise, the computer will throw a syntax error.
+But suppose you need your function to be in strict mode while also using the rest parameter. In such a case, you can write the “use strict” directive outside the function.
+
+Here’s an example:
+
+// Define a “use strict” directive outside your function:
+"use strict";
+
+// Define a function with one rest parameter:
+function printMyName(...value) {
+  return value;
+}
+
+// Invoke the printMyName function while passing two arguments to its parameters:
+printMyName("Oluwatobi", "Sofela");
+
+// The invocation above will return:
+["Oluwatobi", "Sofela"]
+
+const [firstName, lastName, ...otherInfo] = [
+  "Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male"
+];
+
+
+const { firstName, lastName, ...otherInfo } = {
+    firstName: "Oluwatobi",
+    lastName: "Sofela", 
+    companyName: "CodeSweetly",
+    profession: "Web Developer",
+    gender: "Male"
+  }
+
+  const [firstName, ...otherInfo] = ["Oluwatobi", "Sofela", "codesweetly.com"];
+
+console.log(firstName); // "Oluwatobi"
+console.log(otherInfo); // ["Sofela", "codesweetly.com"]
+const [, , website] = ["Oluwatobi", "Sofela", "codesweetly.com"];
+
+console.log(website); // "codesweetly.com"
+
+
+
+
+
+
+
+
+
+
+const myName = ["Sofela", "is", "my"];
+const aboutMe = ["Oluwatobi", ...myName, "name."];
+
+console.log(aboutMe);
+
+
+const myName = "Oluwatobi Sofela";
+console.log([...myName]);
+
+
+const numbers = [1, 3, 5, 7];
+function addNumbers(a, b, c, d) {
+  return a + b + c + d;
+}
+console.log(addNumbers(...numbers));
+
+
+const myName = "Oluwatobi Sofela";
+
+function spellName(a, b, c) {
+  return a + b + c;
+}
+
+console.log(spellName(...myName));      // returns: "Olu"
+
+console.log(spellName(...myName[3]));   // returns: "wundefinedundefined"
+
+console.log(spellName([...myName]));    // returns: "O,l,u,w,a,t,o,b,i, ,S,o,f,e,l,aundefinedundefined"
+
+console.log(spellName({...myName}));    // returns: "[object Object]undefinedundefined"
+
+
+const myName = { firstName: "Oluwatobi", lastName: "Sofela" };
+const bio = { ...myName, website: "codesweetly.com" };
+
+console.log(bio);
+
+// The invocation above will return:
+{ firstName: "Oluwatobi", lastName: "Sofela", website: "codesweetly.com" };
+
+https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/

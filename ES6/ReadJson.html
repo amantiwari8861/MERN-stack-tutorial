@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+    </script>
+</body>
+</html>
+
+In the above, we have been able to read a local JSON file. But unfortunately, when we run this in a browser, we might get the following CORS error because our file is not on a server:
+
+s_9630F87AB23B79DCD31DCDD0E14D2C6C4A3007934D2E561803A41CF5C1FE0085_1659464623693_image
+
+To fix this, we will make sure our JSON file is on a local or remote server. If we use the Live server on our IDE, we won't get this error. But when we load our file directly, we will get this error.
+
+As I said earlier, suppose we have this JSON file on a remote server and are trying to read this file in JavaScript. The same syntax will work:
+
+<!--./index.js-->
+
+fetch('https://server.com/data.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+The fetch API is the preferable method to use when we want to read a JSON file either from an external server or local file into our JavaScript file.
+
+
+import data from './data.json';
+console.log(data);
+
+Unfortunately, this will throw an error saying we cannot use the import statement outside a module. This is a standard error when we try to use the import statement in a regular JavaScript file, especially for developers who are new to JavaScript.
+
+To fix this, we can add the type="module" script tag in our HTML file where we referenced the JavaScript file, like this:
+
+<html lang="en">
+    // ...
+    <body>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
+When we do this, we'll still get another error:
+
+s_9630F87AB23B79DCD31DCDD0E14D2C6C4A3007934D2E561803A41CF5C1FE0085_1659465574774_image
+
+To fix this error, we need to add the file type of JSON to the import statement, and then we'll be able to read our JSON file in JavaScript:
+
+import data from './data.json' assert { type: 'json' };
+console.log(data);
+This works perfectly as long as we run our files on a local or remote server. But suppose we run this locally – then we would get the CORS error.
